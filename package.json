@@ -1,0 +1,39 @@
+{
+  "name": "aielon-fusionhd",
+  "version": "2.0.0",
+  "description": "AiElon Living OS - Enhanced system with Fusion HD UI, Halal Wallet, HCare, and Ummah Hub",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest",
+    "lint": "eslint src/",
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development"
+  },
+  "keywords": [
+    "aielon",
+    "living-os",
+    "fusion-hd",
+    "halal-wallet",
+    "blockchain",
+    "aielonchain338"
+  ],
+  "author": "AiElon Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "crypto-js": "^4.2.0",
+    "web3": "^4.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "eslint": "^8.40.0",
+    "webpack": "^5.80.0",
+    "webpack-cli": "^5.0.0",
+    "webpack-dev-server": "^4.13.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
