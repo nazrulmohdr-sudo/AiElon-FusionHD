@@ -5,6 +5,7 @@
 
 import { globalState } from '../../core/StateManager.js';
 import { securityManager } from '../../security/SecurityManager.js';
+import { randomInt } from 'crypto';
 
 export class HCare {
   constructor() {
@@ -254,7 +255,7 @@ export class HCare {
    * @private
    */
   generatePatientId() {
-    return `PAT${Date.now()}${Math.floor(Math.random() * 1000)}`;
+    return `PAT${Date.now()}${randomInt(1000)}`;
   }
 
   /**
@@ -262,7 +263,7 @@ export class HCare {
    * @private
    */
   generateAppointmentId() {
-    return `APT${Date.now()}${Math.floor(Math.random() * 1000)}`;
+    return `APT${Date.now()}${randomInt(1000)}`;
   }
 
   /**
@@ -270,7 +271,7 @@ export class HCare {
    * @private
    */
   generateRecordId() {
-    return `REC${Date.now()}${Math.floor(Math.random() * 1000)}`;
+    return `REC${Date.now()}${randomInt(1000)}`;
   }
 
   /**
@@ -278,7 +279,7 @@ export class HCare {
    * @private
    */
   generateProviderId() {
-    return `PRV${Date.now()}${Math.floor(Math.random() * 1000)}`;
+    return `PRV${Date.now()}${randomInt(1000)}`;
   }
 
   /**

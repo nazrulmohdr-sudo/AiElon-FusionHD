@@ -4,6 +4,7 @@
  */
 
 import { globalState } from '../core/StateManager.js';
+import { randomBytes } from 'crypto';
 
 export class SecurityManager {
   constructor() {
@@ -185,7 +186,7 @@ export class SecurityManager {
    */
   generateSessionId() {
     const timestamp = Date.now().toString(36);
-    const random = Math.random().toString(36).substring(2, 15);
+    const random = randomBytes(12).toString('hex');
     return `sess_${timestamp}_${random}`;
   }
 

@@ -5,6 +5,7 @@
 
 import { globalState } from '../../core/StateManager.js';
 import { securityManager } from '../../security/SecurityManager.js';
+import { randomInt } from 'crypto';
 
 export class UmmahHub {
   constructor() {
@@ -338,7 +339,7 @@ export class UmmahHub {
    * @private
    */
   generateUserId() {
-    return `USR${Date.now()}${Math.floor(Math.random() * 1000)}`;
+    return `USR${Date.now()}${randomInt(1000)}`;
   }
 
   /**
@@ -346,7 +347,7 @@ export class UmmahHub {
    * @private
    */
   generatePostId() {
-    return `POST${Date.now()}${Math.floor(Math.random() * 1000)}`;
+    return `POST${Date.now()}${randomInt(1000)}`;
   }
 
   /**
@@ -354,7 +355,7 @@ export class UmmahHub {
    * @private
    */
   generateGroupId() {
-    return `GRP${Date.now()}${Math.floor(Math.random() * 1000)}`;
+    return `GRP${Date.now()}${randomInt(1000)}`;
   }
 
   /**
@@ -362,7 +363,7 @@ export class UmmahHub {
    * @private
    */
   generateEventId() {
-    return `EVT${Date.now()}${Math.floor(Math.random() * 1000)}`;
+    return `EVT${Date.now()}${randomInt(1000)}`;
   }
 
   /**
@@ -370,7 +371,7 @@ export class UmmahHub {
    * @private
    */
   generateCommentId() {
-    return `CMT${Date.now()}${Math.floor(Math.random() * 1000)}`;
+    return `CMT${Date.now()}${randomInt(1000)}`;
   }
 
   /**
