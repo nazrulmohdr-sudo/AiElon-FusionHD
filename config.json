@@ -1,0 +1,76 @@
+{
+  "system": {
+    "name": "AiElon Living OS",
+    "version": "2.0.0",
+    "environment": "development"
+  },
+  "security": {
+    "sessionTimeout": 3600000,
+    "maxLoginAttempts": 5,
+    "encryptionEnabled": true,
+    "minPasswordLength": 8
+  },
+  "blockchain": {
+    "chainId": 338,
+    "network": "AiElonChain338",
+    "difficulty": 2,
+    "miningReward": 100
+  },
+  "wallet": {
+    "nisabThreshold": 1000,
+    "zakatPercentage": 2.5,
+    "prohibitedSectors": [
+      "alcohol",
+      "gambling",
+      "tobacco",
+      "weapons"
+    ]
+  },
+  "hcare": {
+    "vitalThresholds": {
+      "heartRate": {
+        "min": 60,
+        "max": 100
+      },
+      "temperature": {
+        "max": 37.5
+      },
+      "oxygenLevel": {
+        "min": 95
+      }
+    }
+  },
+  "ummah": {
+    "contentModeration": {
+      "enabled": true,
+      "inappropriateWords": [
+        "hate",
+        "violence",
+        "discrimination"
+      ]
+    }
+  },
+  "scalability": {
+    "maxWorkers": 10,
+    "taskQueueLimit": 1000,
+    "resourceThresholds": {
+      "cpu": 80,
+      "memory": 75,
+      "network": 70
+    }
+  },
+  "ui": {
+    "defaultTheme": "light",
+    "resolution": "HD",
+    "animations": true,
+    "accessibility": {
+      "highContrast": false,
+      "largeText": false,
+      "screenReader": false
+    }
+  },
+  "logging": {
+    "maxHistorySize": 100,
+    "maxSecurityLogs": 1000
+  }
+}
