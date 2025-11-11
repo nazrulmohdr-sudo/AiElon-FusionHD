@@ -1,0 +1,11 @@
+# Python dependencies for AiElon FusionHD System
+# Core system has minimal dependencies
+
+# Standard library modules are used throughout
+# No external dependencies required for core functionality
+
+# Optional: For enhanced features (uncomment if needed)
+# requests>=2.31.0      # For HTTP communication
+# websockets>=11.0      # For WebSocket support
+# cryptography>=41.0    # For advanced encryption
+# pytest>=7.4.0         # For testing framework
