@@ -23,6 +23,12 @@ AiElon Living OS • Fusion HD UI • Halal Wallet • HCare • Ummah Hub
 python3 aielon_fusionhd.py
 ```
 
+### Run Interactive Demo
+
+```bash
+python3 demo.py
+```
+
 ### Run Tests
 
 ```bash
