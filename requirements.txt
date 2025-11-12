@@ -1,0 +1,11 @@
+# AiElon-FusionHD Requirements
+# This project uses only Python standard library
+# Python 3.8+ required
+
+# No external dependencies required
+# All functionality implemented using:
+# - math (standard library)
+# - decimal (standard library)
+# - hashlib (standard library)
+# - time (standard library)
+# - unittest (standard library)
