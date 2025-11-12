@@ -1,0 +1,9 @@
+# AiElon FusionHD - No External Dependencies Required
+# Uses Python Standard Library Only
+# Tested with Python >= 3.6
+
+# For development and testing (optional)
+# unittest (built-in)
+# typing (built-in)
+# hashlib (built-in)
+# dataclasses (built-in for Python >= 3.7)
