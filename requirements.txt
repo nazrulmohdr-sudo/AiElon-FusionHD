@@ -1,0 +1,10 @@
+# Requirements for Supreme GodMode Mutlak System
+# Python 3.7 or higher required
+
+# No external dependencies required - uses Python standard library only
+# The system is self-contained and portable
+
+# Optional: For development and testing
+# pytest>=7.0.0  # Alternative test runner
+# black>=22.0.0  # Code formatting (optional)
+# mypy>=0.950    # Type checking (optional)
