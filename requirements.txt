@@ -1,0 +1,16 @@
+# Supreme GodMode Mutlak Framework
+# Python Requirements
+
+# No external dependencies required
+# The framework is built using Python standard library only
+
+# Python Version: 3.6+
+# Required modules (all standard library):
+# - math
+# - typing
+# - enum
+# - unittest
+
+# For development and testing:
+# pytest>=7.0.0  # Optional: Advanced testing framework
+# coverage>=6.0  # Optional: Code coverage analysis
