@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "test": "node tests/run-tests.js",
+    "demo": "node demo.js",
     "validate": "node src/index.js"
   },
   "keywords": [
