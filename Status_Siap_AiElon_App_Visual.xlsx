@@ -1,0 +1,41 @@
+# Status_siap_AiElon_App_Visual.xlsx
+
+### Content Overview:
+
+1. **Progress Tracking**:  
+   - Columns for task names, progress percentages, completion dates, and weighted contributions.  
+   - Conditional formatting applied:
+     - 🟢 for progress ≥ 90%
+     - 🟡 for progress 70% - 89%
+     - 🔴 for progress < 70%
+
+2. **Calculations**:  
+   - Overall percentage ready: `=SUMPRODUCT(B2:B8, C2:C8)/100`
+   - Readiness status indicator:
+     - `=IF(Overall_Progress >= 90, "Ready", "Not Ready")`
+   - Latest review date: `=TODAY()`
+
+3. **Dynamic Visuals**:  
+   - **Dynamic Progress Bar**: Utilizes `SPARKLINE` for visual progress.  
+   - **Pie Chart**: Represents module-wise completion.
+   - **Trendline Graph**: Tracks overall project progress over time.
+
+### Dashboard Summary:
+- % Siap Keseluruhan:  
+  (This will auto-update as tasks are completed based on the data provided above.)
+
+### Example Data:  
+| Task Name          | Progress (%)  | Weight  | Date Completed  |
+|--------------------|---------------|---------|-----------------|
+| Module 1           | 95            | 1       | 2025-10-30      |
+| Module 2           | 75            | 1       | 2025-11-01      |
+| Module 3           | 50            | 2       | 2025-11-05      |
+| Module 4           | 100           | 1       | 2025-11-07      |
+| Module 5           | 80            | 1       | 2025-11-10      |
+| Module 6           | 90            | 1       | 2025-11-11      |
+| Module 7           | 40            | 2       | 2025-11-12      |
+| Module 8           | 30            | 1       | 2025-11-12      |
+
+### Instructions:  
+- Update the progress percentage for each module as tasks are completed.
+- Ensure that the weight for each module correctly reflects its importance relative to overall completion.
