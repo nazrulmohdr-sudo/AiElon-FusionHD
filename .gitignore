@@ -49,6 +49,9 @@ tmp/
 temp/
 *.tmp
 
+# AiElon lock files
+.aielon-lock
+
 # Docker
 .docker/
 
