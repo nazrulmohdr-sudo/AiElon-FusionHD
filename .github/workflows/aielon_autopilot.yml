@@ -1,0 +1,50 @@
+name: AIELON_AUTOPILOT
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install Dependencies
+        run: npm install
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: Run AI Brain Orchestrator Test
+        run: node aielon_core/ai_engines/brain.js "Test query from CI/CD"
+        continue-on-error: true
+      
+      - name: Expo Build (Optional)
+        run: |
+          if [ -f "app.json" ]; then
+            npx expo build
+          else
+            echo "Expo not configured yet, skipping build"
+          fi
+        continue-on-error: true
