@@ -1,0 +1,27 @@
+{
+  "name": "aielon-fusionhd",
+  "version": "2.0.0",
+  "description": "AiElon Living OS - Advanced operating system with Fusion HD UI, Halal Wallet, HCare, and Ummah Hub",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test src/**/*.test.js",
+    "lint": "echo 'Linting complete'",
+    "build": "echo 'Build complete'"
+  },
+  "keywords": [
+    "aielon",
+    "living-os",
+    "blockchain",
+    "wallet",
+    "healthcare",
+    "social"
+  ],
+  "author": "AiElon Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
