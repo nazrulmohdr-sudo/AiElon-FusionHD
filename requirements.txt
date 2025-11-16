@@ -1,0 +1,13 @@
+# Python Requirements
+# No external dependencies required - uses only Python standard library
+# Python 3.7+ recommended
+
+# The system uses only built-in modules:
+# - math
+# - decimal
+# - typing
+# - datetime
+# - unittest
+
+# For development and testing:
+# python >= 3.7
