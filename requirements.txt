@@ -1,0 +1,10 @@
+# Supreme GodMode Mutlak System Requirements
+# All dependencies are from Python standard library
+
+# Python >= 3.6 required for:
+# - Type hints (typing module)
+# - f-strings
+# - Enum classes
+# - math.isinf()
+
+# No external dependencies required
